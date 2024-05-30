@@ -25,9 +25,9 @@ def pascal_triangle(n: int) -> list[list[int]]:
     for i in range(1, n):
         rowList = [1]*(i+1)
 
-    for j in range(1, i):
-        rowList[j] = pascal[i-1][j-1] + pascal[i-1][j]
+        for j in range(1, i):
+            rowList[j] = pascal[i-1][j-1] + pascal[i-1][j]
 
-    pascal.append(rowList)
+        pascal.append(rowList)
 
     return pascal
