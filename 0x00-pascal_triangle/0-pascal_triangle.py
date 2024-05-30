@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Pascal's Triangle
+0-pascal_triangle
 """
 
 
@@ -12,8 +12,7 @@ def pascal_triangle(n: int) -> list[list[int]]:
     n (int): The number of rows to generate in the triangle.
 
     Returns:
-    List[List[int]]: A list of lists representing Pascal's triangle.
-
+    pascal list[list[int]]: A list of lists representing Pascal's triangle.
     """
 
     if (n <= 0):
