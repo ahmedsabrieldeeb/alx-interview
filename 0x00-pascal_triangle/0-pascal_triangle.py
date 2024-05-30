@@ -11,8 +11,7 @@ def pascal_triangle(n: int) -> list[list[int]]:
   """
 
   if (n <= 0):
-    print("Invalid! Please enter positive integer number of rows")
-    exit(1)
+    return []
 
   pascal = []
   pascal.append([1])
