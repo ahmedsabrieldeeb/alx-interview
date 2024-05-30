@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def pascal_triangle(n: int) -> list[list[int]]:
   """
   Generate Pascal's triangle up to a given number of rows.
