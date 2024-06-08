@@ -4,6 +4,7 @@ This module contains a function to determine if all the boxes
 in a given list can be unlocked.
 """
 
+
 def canUnlockAll(boxes):
     """
     Determines if all the boxes in the given list can be unlocked.
@@ -15,20 +16,19 @@ def canUnlockAll(boxes):
     Returns:
         bool: True if all boxes can be unlocked, False otherwise.
     """
-    ## setup the algorithm
+    # setup the algorithm
     num_boxes = len(boxes)
     visited = [0] * num_boxes
     visited[0] = 1
 
-    ## start search
+    # start search
     dfs_traversal(boxes[0], boxes, visited, num_boxes)
 
-    ## check whether all nodes visited or not
+    # check whether all nodes visited or not
     if 0 in visited:
         return False
     else:
         return True
-
 
 
 def dfs_traversal(box, boxes, visited, num_boxes):
