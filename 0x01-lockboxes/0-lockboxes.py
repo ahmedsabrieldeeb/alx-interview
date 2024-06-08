@@ -21,6 +21,10 @@ def canUnlockAll(boxes):
     visited = [0] * num_boxes
     visited[0] = 1
 
+    # boxes with all keys in each box
+    if all(len(box) == len(boxes) for box in boxes):
+        return True
+
     # start search
     dfs_traversal(boxes[0], boxes, visited, num_boxes)
 
